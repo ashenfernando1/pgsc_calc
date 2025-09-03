@@ -4,7 +4,7 @@
 //
 
 process INTERSECT_THINNED {
-    // scratch true
+    scratch true
     // labels are defined in conf/modules.config
     label 'process_high_memory'
     label 'process_long'
@@ -89,11 +89,7 @@ process INTERSECT_THINNED {
     # one file -> assume combined chrom data
     if [ \$(wc -l < ids.txt) -eq 1 ]
     then
-        # Rename files to match expected output name
-        basename=\$(head -n1 ids.txt)
-        mv extracted/\${basename}_extracted.pgen ${params.target_build}_${meta.id}_ALL_extracted.pgen
-        mv extracted/\${basename}_extracted.psam ${params.target_build}_${meta.id}_ALL_extracted.psam
-        mv extracted/\${basename}_extracted.pvar ${params.target_build}_${meta.id}_ALL_extracted.pvar
+        mv extracted/*.p* .
     else
         plink2 --threads $task.cpus \
             --memory $mem_mb \
