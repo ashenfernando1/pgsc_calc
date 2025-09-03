@@ -4,7 +4,7 @@
 //
 
 process INTERSECT_THINNED {
-    // scratch true
+    scratch true
     // labels are defined in conf/modules.config
     label 'process_high_memory'
     label 'process_long'
