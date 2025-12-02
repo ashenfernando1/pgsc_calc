@@ -1,4 +1,4 @@
-# The Polygenic Score Catalog Calculator (`pgsc_calc`)
+# The Polygenic Score Catalog Calculator (`pgsc_calc`) - test
 
 [![Documentation Status](https://readthedocs.org/projects/pgsc-calc/badge/?version=latest)](https://pgsc-calc.readthedocs.io/en/latest/?badge=latest)
 [![pgscatalog/pgsc_calc CI](https://github.com/PGScatalog/pgsc_calc/actions/workflows/ci.yml/badge.svg)](https://github.com/PGScatalog/pgsc_calc/actions/workflows/ci.yml)
